@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
       - echo   "Installing dependecies"
-      - npm -i
+      - npm i
 
   build:
     commands:
