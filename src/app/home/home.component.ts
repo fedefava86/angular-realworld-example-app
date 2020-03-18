@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
     private tagsService: TagsService,
     private userService: UserService,
     private http: HttpClient
-  ) {}
+  ) { }
 
   isAuthenticated: boolean;
   listConfig: ArticleListConfig = {
@@ -26,10 +26,10 @@ export class HomeComponent implements OnInit {
   tagsLoaded = false;
 
   ngOnInit() {
-    this.http.get('http://adapi-prod.eba-a4emyq6n.eu-west-1.elasticbeanstalk.com/').toPromise().then((res) => {
+    this.http.get(' Prova-env-prod.eba-zzxfm8q3.eu-central-1.elasticbeanstalk.com').toPromise().then((res) => {
       this.tags = [].concat(res);
       this.tagsLoaded = true;
-    }, () => {});
+    }, () => { });
   }
 
 
